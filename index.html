@@ -16,21 +16,23 @@
     <div class="wrapper">
       <div class="container">
         <div class="content">
-          <h3><b>Sign In</b></h3>
-          <input type="text" placeholder="Username" id="username" />
-          <input type="password" placeholder="Password" id="password" />
-          <input type="checkbox" id="remember-me" />
-          <label for="remember-me"><b>Remember me</b></label>
-          <a href="a" id="forgot-password"><b>Forgot Password?</b></a>
-          <br />
-          <br />
-          <button id="login">LOGIN</button>
-          <div id="flex">
-            <p>
-              Don't have an account?
-              <a href="a" id="sign-up">Sign-up</a>
-            </p>
-          </div>
+          <form action="/login.php" method="POST">
+            <h3><b>Sign In</b></h3>
+            <input type="text" placeholder="Username" id="username" />
+            <input type="password" placeholder="Password" id="password" />
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me"><b>Remember me</b></label>
+            <a href="a" id="forgot-password"><b>Forgot Password?</b></a>
+            <br />
+            <br />
+            <button type="submit" id="login">LOGIN</button>
+            <div id="flex">
+              <p>
+                Don't have an account?
+                <a href="a" id="sign-up">Sign-up</a>
+              </p>
+            </div>
+          </form>
         </div>
       </div>
     </div>
